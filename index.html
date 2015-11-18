@@ -25,34 +25,39 @@
 	<link rel="stylesheet" href="style/bootstrap.css">
 	<script src="javascript/bootstrap.js"></script>
 	-->
+	<link rel="stylesheet" href="css/wookmark.css">
+	<script src="js/wookmark.js"></script>
+	<script src="js/imageloaded.js"></script>
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/left.css">
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-	<div id="wrapper" class="active">
-      
+	<div id="wrapper">
 	  	<!-- Sidebar -->
 	  	<div id="sidebar-wrapper">
-	      	<ul id="sidebar_menu" class="sidebar-nav">
+	      	<!-- <ul id="sidebar_menu" class="sidebar-nav">
 	           <li class="sidebar-brand"><a id="menu-toggle" href="#"><span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
-	      	</ul>
+	      	</ul> -->
 	      	<div class="menu-personal text-center">
 	      		<a href=""><img class="img-circle menu-avatar" src="images/ava.jpg"></a>
 	      		<h3>Arsene Wenger</h3>
 	      		<span class="location"><i class="fa fa-map-marker"></i>Hà Nội, Việt Nam</span>
 	      	</div>
 	      	
-	        <ul class="sidebar-nav menu-profile" id="sidebar">     
+	        <ul class="list-unstyled sidebar-nav menu-profile" id="sidebar">     
 	          	<li><a href=""><i class="fa fa-pencil"></i> Edit profile</a></li>
 	          	<li><a href=""><i class="fa fa-folder-o"></i> Make Your Library</a></li>
 	          	<li><a href=""><i class="fa fa-star-o"></i> Favorite</a></li>
 	          	<li><a href=""><i class="fa fa-fire"></i> Hot Issue</a></li>
 	          	<li><a href=""><i class="fa fa-clock-o"></i> Recent</a></li>
 	        </ul>
-	        <hr>	
-	        <ul class="sidebar-nav menu-category" id="sidebar">
+	        <hr>
+	        <div class="block-scroll">	
+	        <ul class="list-unstyled sidebar-nav menu-category" id="sidebar">
 	        	<li class="text-uppercase"><a href="">Category</a></li>
 	        	<li><a href="">Science & Nature</a></li>
 	        	<li><a href="">Social Science</a></li>
@@ -62,7 +67,7 @@
 	        	<li><a href="">Academics</a></li>
 	        </ul>
 	        <hr>	
-	        <ul class="sidebar-nav menu-kind" id="sidebar">
+	        <ul class="list-unstyled sidebar-nav menu-kind" id="sidebar">
 	        	<li class="text-uppercase"><a href="">Kind</a></li>
 	        	<li><a href="">Art & Photo</a></li>
 	        	<li><a href="">Biography</a></li>
@@ -74,7 +79,8 @@
 	        	<li><a href="">Fictions</a></li>
 	        </ul>
 	        <hr>	
-	        <ul class="sidebar-nav menu-setting" id="sidebar">
+	        </div>
+	        <ul class="list-unstyled sidebar-nav menu-setting" id="sidebar">
 	        	<li><a href="">Make Groups</a></li>
 	        	<li><a href="">Make Events</a></li>
 	        </ul>
@@ -82,7 +88,7 @@
 	          
 	  	<!-- Page content -->
 	  	<div id="page-content-wrapper">
-	        <nav class="navbar">
+	        <nav class="navbar navbar-fixed-top">
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
@@ -112,10 +118,188 @@
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
-			<div class="content-block pull-left">
-				content
+			<div class="content-block">
+				<div class="profile-block">
+					<img class="profile-cover" src="images/banner.jpg">
+					<div class="profile-content text-right">
+						<img class="profile-avatar img-circle" src="images/ava.jpg">
+						<div class="profile-position pull-left text-left">
+							Arsene Wenger<br>
+							Manager
+						</div>
+						<div class="profile-follow text-center">
+							33<br>
+							Follow Store
+						</div>
+						<div class="profile-message text-center">
+							<i class="fa fa-envelope"></i><br>
+							Message
+						</div>
+						<div class="profile-more text-center">
+							<i class="fa fa-ellipsis-h"></i><br>
+							More
+						</div>
+					</div>
+				</div>
+
+				<ul class="nav navbar-nav content-nav">
+					<li><a href="#">My Library</a></li>
+					<li><a href="#">My Store</a></li>
+					<li><a href="#">Under Work</a></li>
+					<li><a href="#">Tagged</a></li>
+					<li><a href="#">Purchase</a></li>
+					<li><a href="#">License</a></li>
+					<li><a href="#">Revenue</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+
+				<div class="clearfix"></div>
+
+				<ul class="tiles-wrap animated">
+			        <!-- These are our grid blocks -->
+			        <li>
+				        <img src="images/1.jpg" width="100%">
+				        <div class="item-content">
+					        <h4>New Surfed.it Profile page</h4>
+					        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					        <span>
+					        	<img class="item-avatar img-circle" src="images/ava.jpg">
+					        	Arsene Wenger
+					        </span>
+					        <div class="col-sm-12 item-count">
+					        	<div class="pull-left"><i class="fa fa-eye"></i>10k </div>
+					        	<div class="pull-right"><i class="fa fa-heart"></i>33<i class="fa fa-comment-o"></i>333</div>					        	
+					        </div>
+				        </div>
+				        <div class="item-button-group">
+				        	<a href="" class="btn btn-default"><i class="fa fa-share-alt"></i> Share</a>
+				        	<a href="" class="btn btn-default"><i class="fa fa-pencil"></i> Edit</a>
+				        	<a href="" class="btn btn-default">X Delete</a>
+				        </div>
+			        </li>
+			        <li>
+				        <img src="images/2.jpg" width="100%">
+				        <div class="item-content">
+					        <h4>New Surfed.it Profile page</h4>
+					        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					        <span>
+					        	<img class="item-avatar img-circle" src="images/ava.jpg">
+					        	Arsene Wenger
+					        </span>
+					        <div class="col-sm-12 item-count">
+					        	<div class="pull-left"><i class="fa fa-eye"></i>10k </div>
+					        	<div class="pull-right"><i class="fa fa-heart"></i>33<i class="fa fa-comment-o"></i>333</div>					        	
+					        </div>
+				        </div>
+				        <div class="item-button-group">
+				        	<a href="" class="btn btn-default"><i class="fa fa-share-alt"></i> Share</a>
+				        	<a href="" class="btn btn-default"><i class="fa fa-pencil"></i> Edit</a>
+				        	<a href="" class="btn btn-default">X Delete</a>
+				        </div>
+			        </li>
+			        <li>
+				        <img src="images/3.jpg" width="100%">
+				        <div class="item-content">
+					        <h4>New Surfed.it Profile page</h4>
+					        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					        <span>
+					        	<img class="item-avatar img-circle" src="images/ava.jpg">
+					        	Arsene Wenger
+					        </span>
+					        <div class="col-sm-12 item-count">
+					        	<div class="pull-left"><i class="fa fa-eye"></i>10k </div>
+					        	<div class="pull-right"><i class="fa fa-heart"></i>33<i class="fa fa-comment-o"></i>333</div>					        	
+					        </div>
+				        </div>
+				        <div class="item-button-group">
+				        	<a href="" class="btn btn-default"><i class="fa fa-share-alt"></i> Share</a>
+				        	<a href="" class="btn btn-default"><i class="fa fa-pencil"></i> Edit</a>
+				        	<a href="" class="btn btn-default">X Delete</a>
+				        </div>
+			        </li>
+			        <li>
+				        <img src="images/4.jpg" width="100%">
+				        <div class="item-content">
+					        <h4>New Surfed.it Profile page</h4>
+					        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					        <span>
+					        	<img class="item-avatar img-circle" src="images/ava.jpg">
+					        	Arsene Wenger
+					        </span>
+					        <div class="col-sm-12 item-count">
+					        	<div class="pull-left"><i class="fa fa-eye"></i>10k </div>
+					        	<div class="pull-right"><i class="fa fa-heart"></i>33<i class="fa fa-comment-o"></i>333</div>					        	
+					        </div>
+				        </div>
+				        <div class="item-button-group">
+				        	<a href="" class="btn btn-default"><i class="fa fa-share-alt"></i> Share</a>
+				        	<a href="" class="btn btn-default"><i class="fa fa-pencil"></i> Edit</a>
+				        	<a href="" class="btn btn-default">X Delete</a>
+				        </div>
+			        </li>
+			        <li>
+				        <img src="images/5.jpg" width="100%">
+				        <div class="item-content">
+					        <h4>New Surfed.it Profile page</h4>
+					        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					        <span>
+					        	<img class="item-avatar img-circle" src="images/ava.jpg">
+					        	Arsene Wenger
+					        </span>
+					        <div class="col-sm-12 item-count">
+					        	<div class="pull-left"><i class="fa fa-eye"></i>10k </div>
+					        	<div class="pull-right"><i class="fa fa-heart"></i>33<i class="fa fa-comment-o"></i>333</div>					        	
+					        </div>
+				        </div>
+				        <div class="item-button-group">
+				        	<a href="" class="btn btn-default"><i class="fa fa-share-alt"></i> Share</a>
+				        	<a href="" class="btn btn-default"><i class="fa fa-pencil"></i> Edit</a>
+				        	<a href="" class="btn btn-default">X Delete</a>
+				        </div>
+			        </li>
+			        <li>
+				        <img src="images/2.jpg" width="100%">
+				        <div class="item-content">
+					        <h4>New Surfed.it Profile page</h4>
+					        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					        <span>
+					        	<img class="item-avatar img-circle" src="images/ava.jpg">
+					        	Arsene Wenger
+					        </span>
+					        <div class="col-sm-12 item-count">
+					        	<div class="pull-left"><i class="fa fa-eye"></i>10k </div>
+					        	<div class="pull-right"><i class="fa fa-heart"></i>33<i class="fa fa-comment-o"></i>333</div>					        	
+					        </div>
+				        </div>
+				        <div class="item-button-group">
+				        	<a href="" class="btn btn-default"><i class="fa fa-share-alt"></i> Share</a>
+				        	<a href="" class="btn btn-default"><i class="fa fa-pencil"></i> Edit</a>
+				        	<a href="" class="btn btn-default">X Delete</a>
+				        </div>
+			        </li>
+			        <li>
+				        <img src="images/4.jpg" width="100%">
+				        <div class="item-content">
+					        <h4>New Surfed.it Profile page</h4>
+					        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					        <span>
+					        	<img class="item-avatar img-circle" src="images/ava.jpg">
+					        	Arsene Wenger
+					        </span>
+					        <div class="col-sm-12 item-count">
+					        	<div class="pull-left"><i class="fa fa-eye"></i>10k </div>
+					        	<div class="pull-right"><i class="fa fa-heart"></i>33<i class="fa fa-comment-o"></i>333</div>					        	
+					        </div>
+				        </div>
+				        <div class="item-button-group">
+				        	<a href="" class="btn btn-default"><i class="fa fa-share-alt"></i> Share</a>
+				        	<a href="" class="btn btn-default"><i class="fa fa-pencil"></i> Edit</a>
+				        	<a href="" class="btn btn-default">X Delete</a>
+				        </div>
+			        </li>
+		      	</ul>
 			</div>
-			<div class="pull-right visitor-block">
+			<div class="visitor-block">
 				<h3 class="text-uppercase">visitor</h3>
 				<ul class="list-unstyled">
 					<li><img class="img-circle" src="images/ava.jpg"> Arsene Wenger</li>
@@ -132,12 +316,33 @@
 			</div>
 	  	</div>
     </div>
-
-    <script type="text/javascript">
-    	$("#menu-toggle").click(function(e) {
-	        e.preventDefault();
-	        $("#wrapper").toggleClass("active");
-		});
-    </script>
 </body>
 </html>
+
+<script type="text/javascript">
+var $tiles = $('.tiles-wrap'),
+    $handler = $('li', $tiles),
+    options = {
+        offset: 20,
+        autoResize: true,
+        itemWidth: 0
+    };
+
+applyLayout();
+
+/**
+ * Reinitializes the wookmark handler after all images have loaded
+ */
+function applyLayout() {
+    $tiles.imagesLoaded(function() {
+        // Destroy the old handler
+        if ($handler.wookmarkInstance) {
+            $handler.wookmarkInstance.clear();
+        }
+
+        // Create a new layout handler.
+        $('.tiles-wrap').wookmark(options);
+    });
+}
+
+</script>
